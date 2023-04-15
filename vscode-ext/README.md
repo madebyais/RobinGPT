@@ -4,9 +4,13 @@ A Visual Studio Code extension allows you to quickly generate natural language t
 
 ## Release Notes
 
+### 0.1.1
+
+- Add try-catch block to catch error when calling the server.
+
 ### 0.1.0
 
-Initial release of RobinGPT.
+- Initial release of RobinGPT.
 
 ### Information
 

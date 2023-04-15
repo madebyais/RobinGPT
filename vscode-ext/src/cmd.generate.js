@@ -14,12 +14,16 @@ module.exports = async () => {
     title: 'Processing...',
     cancellable: false
   }, async () => {
-    const selectedText = editor.document.getText(editor.selection);
-    const url = `http://localhost:5000/generate?text=${selectedText}`
-    const data = (await axios(url)).data;
+    try {
+      const selectedText = editor.document.getText(editor.selection);
+      const url = `http://localhost:5000/generate?text=${selectedText}`
+      const data = (await axios(url)).data;
 
-    editor.edit(function (cb) {
-      cb.replace(editor.selection, Utils.parseCode(data))
-    })
+      editor.edit(function (cb) {
+        cb.replace(editor.selection, Utils.parseCode(data))
+      })
+    } catch (e) {
+      vscode.window.showErrorMessage('Something went wrong. E: ' + e.toString())
+    }
   });
 }

@@ -2,7 +2,7 @@
   "name": "robin-gpt",
   "displayName": "RobinGPT",
   "description": "A Visual Studio Code extension allows you to quickly generate natural language text using the unofficial ChatGPT web wrapper.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "engines": {
     "vscode": "^1.77.0"
   },
