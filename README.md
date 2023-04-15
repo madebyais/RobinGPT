@@ -38,3 +38,7 @@ Please make sure that you have latest python and nodejs lts version.
 2. Block the prompt text
 3. Press the `ctrl+alt+g`
 4. Wait, wait, and DONE!
+
+## Disclaimer
+
+This project is not affiliated with OpenAI in any way. Use at your own risk. I am not responsible for any damage caused by this project. Please read the [OpenAI Terms of Service](https://openai.com/terms) before using this project.
